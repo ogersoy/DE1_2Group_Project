@@ -22,4 +22,4 @@ export SPARK_HOME=/usr/local/spark
 for i in {1..255}; do echo "192.168.1.$i host-192-168-1-$i-de1"| sudo tee -a /etc/hosts; done
 for i in {1..255}; do echo "192.168.2.$i host-192-168-2-$i-de1"| sudo tee -a /etc/hosts; done
 ## run worker
-$SPARK_HOME/sbin/start-slave.sh -m 4g spark://192.168.2.8:7077
+$SPARK_HOME/sbin/start-slave.sh -m 4g spark://192.168.2.247:7077
